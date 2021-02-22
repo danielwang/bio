@@ -1,0 +1,117 @@
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  min-height: 100%;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.125rem;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
+  margin-top: 0;
+  color: #2f3c49;
+}
+
+h1 {
+  font-size: 4rem;
+  color: white;
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.mb {
+  margin-bottom: 4rem;
+}
+aside {
+  flex-grow: 1.618003;
+  flex-shrink: 1.618003;
+  flex-basis: 0;
+  background-image: url("img/bg.jpg");
+  background-size: cover;
+  background-position-y: 100%;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  /* clip-path: polygon(0 0, 100% 8%, 100% 92%, 0% 100%); */
+}
+.mask {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(47, 60, 73, 0.45);
+}
+
+header {
+  text-align: center;
+  margin-top: 4rem;
+  position: relative;
+  z-index: 1;
+}
+aside img {
+  /* width: 100%; */
+  height: 100vh;
+}
+main {
+  padding: 4rem;
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-links {
+  margin-bottom: 4rem;
+}
+.social-links span {
+  margin-right: 0.25rem;
+}
+.social-links img {
+  height: 1.125rem;
+}
+section:not(:last-child) {
+  margin-bottom: 4rem;
+}
+
+p {
+  width: 85%;
+  line-height: 1.6;
+}
+
+main .logo {
+  filter: grayscale(0.75);
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+main .logo:hover {
+  filter: grayscale(0);
+}
+.logo label {
+  display: none;
+}
+.logo:hover label,
+.logo:focus label {
+  display: inline-block;
+  position: absolute;
+  bottom: -20px;
+  left: 1px;
+  background-color: #2f3c49;
+  color: white;
+  font-size: 0.875rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+@media (min-height: 500px) {
+}
