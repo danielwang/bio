@@ -26,7 +26,7 @@ h1 {
 }
 h2 {
   font-size: 2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 4rem;
 }
 
 .mb {
@@ -38,7 +38,7 @@ aside {
   flex-basis: 0;
   background-image: url("img/bg.jpg");
   background-size: cover;
-  background-position-y: 100%;
+  background-position: 50% bottom;
   background-repeat: no-repeat;
   color: white;
   position: relative;
@@ -50,7 +50,7 @@ aside {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(47, 60, 73, 0.45);
+  background-color: rgba(47, 60, 73, 0.65);
 }
 
 header {
@@ -71,7 +71,9 @@ main {
 }
 
 .social-links {
-  margin-bottom: 4rem;
+  margin-top: -1rem;
+  margin-bottom: 0.5rem;
+  text-align: right;
 }
 .social-links span {
   margin-right: 0.25rem;
@@ -93,7 +95,13 @@ main .logo {
   position: relative;
   width: 50px;
   height: 50px;
-  display: inline-block;
+  display: inline-flex;
+  margin-right: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+main .logo img {
+  height: 36px;
 }
 main .logo:hover {
   filter: grayscale(0);
@@ -105,13 +113,13 @@ main .logo:hover {
 .logo:focus label {
   display: inline-block;
   position: absolute;
-  bottom: -20px;
-  left: 1px;
+  bottom: -2px;
   background-color: #2f3c49;
   color: white;
   font-size: 0.875rem;
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
+  transform: translate(0, 100%);
 }
 @media (min-height: 500px) {
 }

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="102px" height="92px" viewBox="0 0 102 92" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Sketch_Logo</title>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-30.000000, -272.000000)" fill-rule="nonzero">
+            <g id="Sketch_Logo" transform="translate(30.000000, 272.000000)">
+                <polygon id="Path" fill="#FDB300" points="22.1705329 3.02751194 50.8074711 0 79.4444093 3.02751194 101.614942 32.7894936 50.8074711 91.9542608 0 32.7894936"></polygon>
+                <g id="Group" transform="translate(0.000000, 32.789494)">
+                    <polygon id="Path" fill="#EA6C00" points="20.579573 0 50.8075169 59.1647865 0 0"></polygon>
+                    <polygon id="Path" fill="#EA6C00" transform="translate(76.211138, 29.582393) scale(-1, 1) translate(-76.211138, -29.582393) " points="71.3869524 0 101.614896 59.1647865 50.8073794 0"></polygon>
+                    <polygon id="Path" fill="#FDAD00" points="20.579573 0 81.0354607 0 50.8075169 59.1647865"></polygon>
+                </g>
+                <g id="Group">
+                    <polygon id="Path" fill="#FDD231" points="50.8075169 0 22.1704494 3.02747191 20.579573 32.7894719"></polygon>
+                    <polygon id="Path" fill="#FDD231" transform="translate(65.921333, 16.394736) scale(-1, 1) translate(-65.921333, -16.394736) " points="81.0353046 0 52.3982372 3.02747191 50.8073608 32.7894719"></polygon>
+                    <polygon id="Path" fill="#FDAD00" transform="translate(90.529672, 17.908472) scale(-1, 1) translate(-90.529672, -17.908472) " points="79.4443176 32.7894719 101.615025 3.02747191 100.023891 32.7894719"></polygon>
+                    <polygon id="Path" fill="#FDAD00" points="0 32.7894719 22.1704494 3.02747191 20.579573 32.7894719"></polygon>
+                    <polygon id="Path" fill="#FEEEB7" points="50.8075169 0 20.579573 32.7894719 81.0354607 32.7894719"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
