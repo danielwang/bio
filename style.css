@@ -151,3 +151,27 @@ main .logo:hover {
     min-height: 100vh;
   }
 }
+
+/** dark mode **/
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #eee;
+    background: #2f3c49;
+  }
+  h1,
+  h2,
+  h3 {
+    color: #d6dde4;
+  }
+  a {
+    color: #809fff;
+  }
+
+  .revert {
+    filter: invert(0.85);
+  }
+  .social-links img {
+    filter: brightness(1);
+  }
+}
