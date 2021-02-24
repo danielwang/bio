@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 html {
   height: 100%;
 }
@@ -10,7 +13,7 @@ body {
   font-size: 1.125rem;
 }
 a {
-  text-decoration: none;
+  color: #9d6c9e;
 }
 h1,
 h2,
@@ -21,12 +24,13 @@ h3 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: clamp(1.75rem, 2.5vw, 2.25rem);
   color: white;
+  margin-bottom: 1rem;
 }
 h2 {
-  font-size: 2rem;
-  margin-bottom: 4rem;
+  font-size: clamp(1.75rem, 2.5vw, 2.25rem);
+  margin-bottom: 1rem;
 }
 
 .mb {
@@ -44,7 +48,7 @@ aside {
   position: relative;
   /* clip-path: polygon(0 0, 100% 8%, 100% 92%, 0% 100%); */
 }
-.mask {
+aside .mask {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -53,12 +57,13 @@ aside {
   background-color: rgba(47, 60, 73, 0.65);
 }
 
-header {
-  text-align: center;
-  margin-top: 4rem;
+aside header {
+  margin: 4rem 4rem 0 0;
   position: relative;
   z-index: 1;
+  text-align: right;
 }
+
 aside img {
   /* width: 100%; */
   height: 100vh;
@@ -71,12 +76,13 @@ main {
 }
 
 .social-links {
-  margin-top: -1rem;
-  margin-bottom: 0.5rem;
-  text-align: right;
+  margin-bottom: 4rem;
 }
 .social-links span {
   margin-right: 0.25rem;
+}
+.social-button {
+  text-decoration: none;
 }
 .social-links img {
   height: 1.125rem;
@@ -86,17 +92,18 @@ section:not(:last-child) {
 }
 
 p {
-  width: 85%;
+  width: max(320px, 85%);
   line-height: 1.6;
 }
 
 main .logo {
   filter: grayscale(0.75);
   position: relative;
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
   display: inline-flex;
   margin-right: 0.5rem;
+  margin-left: -6px;
   justify-content: center;
   align-items: center;
 }
@@ -121,5 +128,26 @@ main .logo:hover {
   border-radius: 0.25rem;
   transform: translate(0, 100%);
 }
-@media (min-height: 500px) {
+
+@media only screen and (max-width: 1023px) {
+  body {
+    flex-direction: column;
+  }
+  aside {
+    background-position: 50% center;
+    min-height: 50vh;
+  }
+  main {
+    padding: 2rem;
+  }
+  section:not(:last-child),
+  .social-links {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  aside {
+    min-height: 100vh;
+  }
 }
