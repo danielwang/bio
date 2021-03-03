@@ -184,14 +184,21 @@ main .logo:hover {
   transform: skew(3deg) rotate(3deg);
 }
 
+.paper li {
+  margin-bottom: 0.5rem;
+}
 .d-flex {
   display: flex;
   align-items: center;
 }
 
+nav {
+  white-space: nowrap;
+}
 .back {
   margin: 2rem;
-  display: flex;
+  font-size: 1.5rem;
+  text-decoration: none;
 }
 .arrow-left {
   width: 1rem;
@@ -280,5 +287,8 @@ main .logo:hover {
   }
   .portfolio-item:before {
     border-top-color: #2f3c49;
+  }
+  .paper {
+    background: #536a81;
   }
 }
