@@ -11,6 +11,8 @@ body {
   min-height: 100%;
   font-family: "Raleway", sans-serif;
   font-size: 1.125rem;
+  background-color: #f1f4f6;
+  line-height: 1.6;
 }
 a {
   color: #9d6c9e;
@@ -93,7 +95,6 @@ section:not(:last-child) {
 
 p {
   width: max(320px, 85%);
-  line-height: 1.6;
 }
 
 main .logo {
@@ -152,6 +153,104 @@ main .logo:hover {
   }
 }
 
+.paper {
+  position: relative;
+  margin: 40px;
+  width: 680px;
+  background: #fff;
+  border-radius: 2px;
+  padding: 2rem;
+}
+
+.paper::before,
+.paper::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  width: 40%;
+  height: 10px;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.7);
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+
+.paper::before {
+  left: 15px;
+  transform: skew(-3deg) rotate(-3deg);
+}
+
+.paper::after {
+  right: 15px;
+  transform: skew(3deg) rotate(3deg);
+}
+
+section {
+  display: flex;
+  align-items: center;
+}
+
+.back {
+  margin: 2rem;
+}
+.arrow-left {
+  width: 1rem;
+  display: inline;
+}
+
+.portfolio {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.portfolio-item img {
+  width: 100%;
+}
+.portfolio-item {
+  list-style: none;
+  min-width: 800px;
+  padding: 4px;
+  border: 1px solid #ddd;
+  position: relative;
+  margin-right: 4rem;
+  /* transform: rotate(37deg); */
+}
+
+.portfolio-item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border: 50px solid transparent;
+  border-bottom: 50px solid#F1F4F6;
+  bottom: -60px;
+  right: -65px;
+  box-shadow: 0px 7px 6px -9px black;
+  transform: rotate(135deg);
+}
+
+.portfolio-item:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border: 50px solid transparent;
+  border-top: 50px solid#F1F4F6;
+  top: -60px;
+  left: -65px;
+  box-shadow: 0px -7px 6px -9px black;
+  transform: rotate(135deg);
+}
+
+/* .portfolio-item:nth-child(3n + 1) {
+  transform: rotate(-1deg);
+}
+.portfolio-item:nth-child(3n + 2) {
+  transform: rotate(0);
+}
+.portfolio-item:nth-child(3n + 3) {
+  transform: rotate(1deg);
+} */
 /** dark mode **/
 
 @media (prefers-color-scheme: dark) {
@@ -162,7 +261,7 @@ main .logo:hover {
   h1,
   h2,
   h3 {
-    color: #d6dde4;
+    color: #f1f4f6;
   }
   a {
     color: #809fff;
@@ -173,5 +272,11 @@ main .logo:hover {
   }
   .social-links img {
     filter: brightness(1);
+  }
+  .portfolio-item:after {
+    border-bottom-color: #2f3c49;
+  }
+  .portfolio-item:before {
+    border-top-color: #2f3c49;
   }
 }
