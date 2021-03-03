@@ -184,17 +184,19 @@ main .logo:hover {
   transform: skew(3deg) rotate(3deg);
 }
 
-section {
+.d-flex {
   display: flex;
   align-items: center;
 }
 
 .back {
   margin: 2rem;
+  display: flex;
 }
 .arrow-left {
   width: 1rem;
   display: inline;
+  margin-right: 0.5rem;
 }
 
 .portfolio {
