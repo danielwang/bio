@@ -189,6 +189,10 @@ main .logo:hover {
   transform: skew(3deg) rotate(3deg);
 }
 
+.paper ul {
+  list-style: circle;
+  margin-left: 1.125rem;
+}
 .paper li {
   margin-bottom: 0.5rem;
 }
