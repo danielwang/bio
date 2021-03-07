@@ -20,7 +20,7 @@
   </head>
 
   <body>
-    <aside>
+    <aside aria-label="Cover image">
       <div class="mask" role="presentation"></div>
       <!-- <img src="img/bg.jpg" /> -->
       <header>
@@ -31,7 +31,7 @@
     <main>
       <header>
         <h2>Hybrid Designer & Developer</h2>
-        <div class="social-links">
+        <div class="social-links" aria-label="social media">
           <span>
             <a
               class="social-button"
@@ -39,7 +39,7 @@
               href="https://www.linkedin.com/in/danielwang130/"
               title="Linkedin"
             >
-              <img src="img/linkedin-brands.svg"
+              <img src="img/linkedin-brands.svg" aria-hidden="true"
             /></a>
           </span>
           <span>
@@ -49,7 +49,7 @@
               href="https://medium.com/@daniel_wang"
               title="Medium"
             >
-              <img src="img/medium-m-brands.svg" />
+              <img src="img/medium-m-brands.svg" aria-hidden="true" />
             </a>
           </span>
           <span>
@@ -59,7 +59,7 @@
               href="https://github.com/danielwang"
               title="Github"
             >
-              <img src="img/github-brands.svg" />
+              <img src="img/github-brands.svg" aria-hidden="true" />
             </a>
           </span>
           <span>
@@ -69,7 +69,7 @@
               href="https://codepen.io/danielwang/"
               title="Codepen"
             >
-              <img src="img/codepen-brands.svg" />
+              <img src="img/codepen-brands.svg" aria-hidden="true" />
             </a>
           </span>
           <!-- <span> <a class="   social-button" target="_blank" href="https://www.instagram.com/danielwang/" data-toggle="tool  " data-placement="bottom" title="Instagram"> <i class="fa fa-instagram"></i> </a> </span> -->
@@ -93,90 +93,82 @@
           <a href="https://gel.pageuppeople.com/" target="_blank"
             >Design System</a
           >
-          and Web accessibility (WCAG) best practice.
+          and Web accessibility
+          <abbr title="Web Content Accessibility Guidelines">WCAG 2.1</abbr>
+          best practice.
         </p>
       </section>
       <section>
-        <h3>Design Tools I Play</h3>
-        <div>
-          <span class="logo" tabindex="1"
-            ><img
+        <h3 id="design-tools">Design Tools I Play</h3>
+        <ul aria-describedby="design-tools">
+          <li class="logo" tabindex="1">
+            <img src="img/sketch.svg" alt="Sketch logo" /><label
               aria-hidden="true"
-              src="img/sketch.svg"
-              title="Sketch"
-            /><label>Sketch</label></span
-          >
-          <span class="logo" tabindex="1"
-            ><img
+              >Sketch</label
+            >
+          </li>
+          <li class="logo" tabindex="1">
+            <img src="img/invision.svg" alt="InVision logo" /><label
               aria-hidden="true"
-              src="img/invision.svg"
-              title="InVision"
-            /><label>inVision</label></span
-          >
-          <span class="logo" tabindex="1"
-            ><img
+              >inVision</label
+            >
+          </li>
+          <li class="logo" tabindex="1">
+            <img
               class="revert"
-              aria-hidden="true"
               src="img/abstract.svg"
-              title="Abstract"
-            /><label>Abstract</label></span
-          >
-          <span class="logo" tabindex="1"
-            ><img aria-hidden="true" src="img/figma.svg" title="Figma" /><label
+              alt="Abstract logo"
+            /><label aria-hidden="true">Abstract</label>
+          </li>
+          <li class="logo" tabindex="1">
+            <img src="img/figma.svg" alt="Figma logo" /><label
+              aria-hidden="true"
               >Figma</label
-            ></span
-          >
-        </div>
+            >
+          </li>
+        </ul>
       </section>
       <section>
-        <h3>Technologies I Use</h3>
-        <div>
-          <span class="logo" tabindex="1"
-            ><img aria-hidden="true" src="img/html.svg" title="HTML" /><label
+        <h3 id="tech-tools">Technologies I Use</h3>
+        <ul aria-describedby="tech-tools">
+          <li class="logo" tabindex="1"></li>
+            <img src="img/html.svg" alt="HTML icon" /><label aria-hidden="true"
               >HTML</label
-            ></span
-          >
-          <span class="logo" tabindex="1"
-            ><img
-              aria-hidden="true"
-              src="img/js.svg"
-              title="Javascript"
-            /><label>Javascript</label></span
-          >
-          <span class="logo" tabindex="1"
-            ><img aria-hidden="true" src="img/css.svg" title="CSS" /><label
+            >
+          </li>
+          <li class="logo" tabindex="1">
+            <img src="img/js.svg" title="Javascript" /><label>Javascript</label>
+          </li>
+          <li class="logo" tabindex="1">
+            <img src="img/css.svg" title="CSS icon" /><label aria-hidden="true"
               >CSS</label
-            ></span
-          >
-          <span class="logo" tabindex="1"
-            ><img
-              class="revert"
+            >
+          </li>
+          <li class="logo" tabindex="1">
+            <img class="revert" src="img/aria.svg" alt="WAI ARIA icon" /><label
               aria-hidden="true"
-              src="img/aria.svg"
-              title="Accessibility"
-            /><label>ARIA</label></span
-          >
-          <span class="logo" tabindex="1"
-            ><img
-              class="revert"
+              >ARIA</label
+            >
+          </li>
+          <li class="logo" tabindex="1">
+            <img class="revert" src="img/github.svg" alt="Github icon" /><label
               aria-hidden="true"
-              src="img/github.svg"
-              title="Github"
-            /><label>Github</label></span
-          >
-          <span class="logo" tabindex="1"
-            ><img aria-hidden="true" src="img/react.svg" title="React" /><label
+              >Github</label
+            >
+          </li>
+          <li class="logo" tabindex="1">
+            <img src="img/react.svg" alt="React icon" /><label
+              aria-hidden="true"
               >React</label
-            ></span
-          >
-          <span class="logo" tabindex="1"
-            ><img
+            >
+          </li>
+          <li class="logo" tabindex="1">
+            <img src="img/voiceover.svg" alt="Screenreader icon" /><label
               aria-hidden="true"
-              src="img/voiceover.svg"
-              title="Screenreader"
-            /><label>Screen Reader</label></span
-          >
-        </div>
+              >Screen Reader</label
+            >
+          </li>
+        </ul>
       </section>
     </main>
   </body>
