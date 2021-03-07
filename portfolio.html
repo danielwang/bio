@@ -50,60 +50,74 @@
           </picture>
         </figure>
 
-        <article class="paper">
-          <h3>What I do</h3>
+        <article class="paper" aria-labelledby="wid">
+          <h3 id="wid" aria-hidden="true">What I do</h3>
           <ul>
-            <li>Craft and build Design System</li>
-            <li>Write design guidelines</li>
-            <li>Coach designers and developers use the Design System.</li>
-            <li>Write accessibility guidelines</li>
-            <li>Coach designers and developers Web Accessibility WCAG 2.1</li>
-            <li>
+            <li id="w1">Craft and build Design System</li>
+            <li id="w2">Write design guidelines</li>
+            <li id="w3">
+              Coach designers and developers use the Design System.
+            </li>
+            <li id="w4">Write accessibility guidelines</li>
+            <li id="w5">
+              Coach designers and developers Web Accessibility WCAG 2.1
+            </li>
+            <li id="w6">
               Play a Design Ops role focus on tools, processes, design handoff,
               and operations.
             </li>
-            <li>Facilitate design ideation workshops</li>
-            <li>Create wireframes and hi-fi mockups</li>
-            <li>Reviews on design and give advice</li>
-            <li>Code reviews PR on Github</li>
-            <li>Test A11Y on Assistive Technologies</li>
-            <li>Share knowledge by presentations</li>
+            <li id="w7">Facilitate design ideation workshops</li>
+            <li id="w8">Create wireframes and hi-fi mockups</li>
+            <li id="w9">Reviews on design and give advice</li>
+            <li id="w10">Code reviews PR on Github</li>
+            <li id="w11">Test A11Y on Assistive Technologies</li>
+            <li id="w12">Share knowledge by presentations</li>
           </ul>
         </article>
       </header>
-      <section>
-        <ul class="portfolio">
-          <li class="portfolio-item">
-            <img src="work/2.jpg" />
-          </li>
-          <li class="portfolio-item">
-            <img src="work/3.png" />
-          </li>
-          <li class="portfolio-item">
-            <img src="work/4.jpg" />
-          </li>
-          <li class="portfolio-item">
-            <img src="work/5.png" />
-          </li>
-          <li class="portfolio-item">
-            <img src="work/7.png" />
-          </li>
-          <li class="portfolio-item">
-            <img src="work/6.jpg" />
-          </li>
-          <li class="portfolio-item">
-            <img src="work/8.png" />
-          </li>
-          <li class="portfolio-item">
-            <img src="work/11.png" />
-          </li>
-          <li class="portfolio-item">
-            <img src="work/9.jpg" />
-          </li>
-          <li class="portfolio-item">
-            <img src="work/10.png" />
-          </li>
-        </ul>
+      <section role="main" aria-label="portfolios">
+        <div role="list" class="portfolio">
+          <figure role="listitem" class="portfolio-item">
+            <img src="work/11.png" alt="design system in design tool" />
+            <figcaption>Craft Design System</figcaption>
+          </figure>
+          <figure role="listitem" class="portfolio-item">
+            <img src="work/6.jpg" alt="Wall of designs" />
+            <figcaption>Review & iterate Design System</figcaption>
+          </figure>
+          <figure role="listitem" class="portfolio-item">
+            <img src="work/8.png" alt="guidelines" />
+            <figcaption>Write design language and guidelines</figcaption>
+          </figure>
+          <figure role="listitem" class="portfolio-item">
+            <img src="work/10.png" alt="Github" />
+            <figcaption>React version Design System in github</figcaption>
+          </figure>
+          <figure role="listitem" class="portfolio-item">
+            <img src="work/9.jpg" alt="Presentation" />
+            <figcaption>Presentation - coaching Web Accessibility</figcaption>
+          </figure>
+          <figure role="listitem" class="portfolio-item">
+            <img src="work/2.jpg" alt="Design workshop in a room" />
+            <figcaption>Facilitate design ideation workshops</figcaption>
+          </figure>
+          <figure role="listitem" class="portfolio-item">
+            <img src="work/3.png" alt="sketching" />
+            <figcaption>Sketch ideas from design workshops</figcaption>
+          </figure>
+          <figure role="listitem" class="portfolio-item">
+            <img src="work/4.jpg" alt="post notes on a board" />
+            <figcaption>Synthesize ideas from design workshops</figcaption>
+          </figure>
+          <figure role="listitem" class="portfolio-item">
+            <img src="work/5.png" alt="sketching in paper" />
+            <figcaption>Sketch Low fi wireframes</figcaption>
+          </figure>
+          <figure role="listitem" class="portfolio-item">
+            <img src="work/7.png" alt="art boards in design tool" />
+            <figcaption>Produce Hi fi mockups</figcaption>
+          </figure>
+        </div>
       </section>
     </div>
   </body>
