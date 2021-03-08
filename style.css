@@ -97,7 +97,31 @@ main {
 section:not(:last-child) {
   margin-bottom: 4rem;
 }
+abbr[title] {
+  position: relative;
 
+  /* ensure consistent styling across browsers */
+  text-decoration: underline dotted;
+}
+
+abbr[title]:hover::after,
+abbr[title]:focus::after {
+  content: attr(title);
+
+  /* position tooltip like the native one */
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  width: auto;
+  white-space: nowrap;
+
+  /* style tooltip */
+  background-color: #2f3c49;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 0.875rem;
+  padding: 3px 5px;
+}
 p {
   width: max(320px, 85%);
 }
@@ -225,13 +249,13 @@ nav {
 
 .portfolio-item img {
   width: 100%;
+  margin-bottom: -8px;
 }
 .portfolio-item {
   list-style: none;
   min-width: 800px;
   padding: 4px;
   border: 1px solid #ddd;
-  position: relative;
   margin-right: 4rem;
   position: relative;
   /* transform: rotate(37deg); */
@@ -307,5 +331,11 @@ nav {
   }
   .paper {
     background: #536a81;
+  }
+  .portfolio-item {
+    border-color: #536a81;
+  }
+  .portfolio-item figcaption {
+    color: #ffffff;
   }
 }
