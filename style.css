@@ -1,7 +1,7 @@
 /**
 
-Designed and coded by myself. 
-This was hand crafted code. 
+Designed and coded by myself.
+This was hand crafted code.
 Try screen reader on this site.
 
 **/
@@ -240,11 +240,33 @@ main .logo:hover {
 
 nav {
   white-space: nowrap;
+  position: fixed;
+  top:0;
+  z-index: 1;
+  display:flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 2rem;
 }
-.back {
-  margin: 2rem;
-  font-size: 1.5rem;
-  text-decoration: none;
+.control button{
+  background: transparent;
+  border: 0;
+  color: var(--dark-bg);
+  cursor: pointer;
+}
+.control button:disabled{
+  opacity: 0.3
+}
+.back svg, .control svg{
+  width: 2rem;
+}
+.back svg{
+  vertical-align: bottom;
+  display: inline;
+}
+.back{
+  text-decoration:none;
+
 }
 .arrow-left {
   width: 1rem;
@@ -328,6 +350,9 @@ nav {
   }
   a {
     color: #809fff;
+  }
+  .control button{
+    color: white;
   }
 
   .revert {

@@ -21,25 +21,22 @@
   </head>
 
   <body>
-    <div class="d-flex">
+    <nav>
+      <a class="back" href="index.html" aria-label ="Back to homepage"
+        ><svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="arrow-circle-left" class="svg-inline--fa fa-arrow-circle-left fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zM256 472c-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216 118.7 0 216 96.1 216 216 0 118.7-96.1 216-216 216zm-12.5-92.5l-115.1-115c-4.7-4.7-4.7-12.3 0-17l115.1-115c4.7-4.7 12.3-4.7 17 0l6.9 6.9c4.7 4.7 4.7 12.5-.2 17.1L181.7 239H372c6.6 0 12 5.4 12 12v10c0 6.6-5.4 12-12 12H181.7l85.6 82.5c4.8 4.7 4.9 12.4.2 17.1l-6.9 6.9c-4.8 4.7-12.4 4.7-17.1 0z"></path></svg>
+        Back
+      </a>
+      <div class="control">
+        <button class="scroller-left-btn" onclick="sideWayScroll('left')" aria-label="scroll left">
+          <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="chevron-circle-left" class="svg-inline--fa fa-chevron-circle-left fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zM256 472c-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216 118.7 0 216 96.1 216 216 0 118.7-96.1 216-216 216zm-86.6-224.5l115.1-115c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L209 256l99.5 99.5c4.7 4.7 4.7 12.3 0 17l-7.1 7.1c-4.7 4.7-12.3 4.7-17 0l-115.1-115c-4.6-4.8-4.6-12.4.1-17.1z"></path></svg>
+        </button>
+        <button class="scroller-right-btn" onclick="sideWayScroll('right')" aria-label="scroll right">
+          <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="chevron-circle-right" class="svg-inline--fa fa-chevron-circle-right fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M8 256c0 137 111 248 248 248s248-111 248-248S393 8 256 8 8 119 8 256zM256 40c118.7 0 216 96.1 216 216 0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216zm86.6 224.5l-115.1 115c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L303 256l-99.5-99.5c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l115.1 115c4.6 4.8 4.6 12.4-.1 17.1z"></path></svg>
+        </button>
+      </div>
+    </nav>
+    <div class="d-flex container">
       <header class="d-flex">
-        <nav>
-          <a class="back" href="index.html"
-            ><svg
-              aria-hidden="true"
-              class="arrow-left"
-              role="img"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512"
-            >
-              <path
-                fill="currentColor"
-                d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"
-              ></path>
-            </svg>
-            Back
-          </a>
-        </nav>
         <figure>
           <figcaption><h3>Where I am</h3></figcaption>
           <picture>
@@ -50,7 +47,6 @@
             <img src="work/bg.png" alt="design spectrum" />
           </picture>
         </figure>
-
         <article class="paper" aria-labelledby="wid">
           <h3 id="wid" aria-hidden="true">What I do</h3>
           <ul>
@@ -98,7 +94,7 @@
             <img src="work/9.jpg" alt="Presentation" />
             <figcaption>Presentation - coaching Web Accessibility</figcaption>
           </figure>
-          <figure role="listitem" class="portfolio-item">
+          <figure id="test" role="listitem" class="portfolio-item">
             <img src="work/2.jpg" alt="Design workshop in a room" />
             <figcaption>Facilitate design ideation workshops</figcaption>
           </figure>
@@ -121,5 +117,6 @@
         </div>
       </section>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
