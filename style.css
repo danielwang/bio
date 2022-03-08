@@ -357,6 +357,11 @@ nav {
   .revert {
     filter: invert(0.85);
   }
+
+  main .logo{
+    filter: grayscale(0);
+  }
+  
   .social-links img {
     filter: brightness(1);
   }
