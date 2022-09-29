@@ -246,6 +246,7 @@ nav {
   justify-content: space-between;
   width: 100%;
   padding: 1rem 2rem;
+  background: inherit;
 }
 .control button{
   background: transparent;
@@ -380,4 +381,26 @@ nav {
   .portfolio-item figcaption {
     color: #ffffff;
   }
+}
+/* slide deck */
+.d-grid{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1rem;
+  padding: 5rem 2rem;
+}
+
+@media only screen and (min-width: 1900px) {
+  .d-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media only screen and (max-width: 1400px) {
+  .d-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media only screen and (max-width: 1024px) {
+  .d-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media only screen and (max-width: 567px) {
+  .d-grid { grid-template-columns: repeat(1, 1fr); }
 }
