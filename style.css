@@ -13,7 +13,44 @@ Try screen reader on this site.
 
 * {
   box-sizing: border-box;
+  cursor: none;
 }
+
+.pointer {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid var(--blue);
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-50% + 15px), -50%);
+  z-index: 1;
+  background-color: var(--blue);
+  opacity: .75;
+  /* backdrop-filter: invert(1) grayscale(1); */
+}
+
+.pointer2 {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: var(--blue);
+  opacity: .9;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width .3s, height .3s, opacity .3s;
+  z-index: 1;
+}
+.cursorinnerhover {
+  width: 50px;
+  height: 50px;
+  opacity: .5;
+}
+
 html {
   height: 100%;
 }
@@ -336,6 +373,7 @@ nav {
 .portfolio-item:nth-child(3n + 3) {
   transform: rotate(1deg);
 } */
+
 /** dark mode **/
 
 @media (prefers-color-scheme: dark) {
@@ -362,7 +400,13 @@ nav {
   main .logo{
     filter: grayscale(0);
   }
-  
+  .pointer{
+    border-color: var(--white);
+    background-color: var(--white);
+  }
+  .pointer2{
+    background-color: var(--white);
+  }
   .social-links img {
     filter: brightness(1);
   }
@@ -382,6 +426,7 @@ nav {
     color: #ffffff;
   }
 }
+
 /* slide deck */
 .d-grid{
   display: grid;
